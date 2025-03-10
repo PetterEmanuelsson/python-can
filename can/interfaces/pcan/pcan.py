@@ -601,6 +601,7 @@ class PcanBus(BusABC):
             is_rx=is_rx,
             bitrate_switch=bitrate_switch,
             error_state_indicator=error_state_indicator,
+            channel=self.channel_info,
         )
 
         return rx_msg, False
